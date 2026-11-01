@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Claude 商业化</title>
+<link rel="icon" href="assets/huawei-logo.png">
+<link rel="stylesheet" href="css/styles.css?v=9758417d"><link rel="stylesheet" href="css/components.css?v=61c8d8ac"><link rel="stylesheet" href="css/english.css?v=f11493a5">
+<script defer src="js/config.js"></script><script defer src="js/navigation.js"></script><script defer src="js/app.js"></script><script defer src="js/translations.js"></script><script defer src="js/language.js"></script><script defer src="js/scenes.js"></script>
+</head><body><main id="viewport" aria-label="Claude 商业化"><div id="deck"><section class="slide kit-slide active" data-slide-id="commercial-overview" data-title="Claude 商业化的四种路径" data-section="商业化总览" aria-label="第 1 页：Claude 商业化的四种路径"><header class="slide-header"><img class="brand" src="assets/huawei-logo.png" alt="HUAWEI"><span>HUAWEI CLOUD</span></header><div class="heading"><div class="eyebrow">COMMERCIAL OVERVIEW</div><h2>Claude 商业化的四种路径</h2><p></p></div><div class="kit-body"><div class="commercial-map" role="group">
+  <div class="commercial-root"><h1>Claude 商业化</h1></div>
+  <div class="commercial-trunk" aria-hidden="true"></div>
+  <div class="commercial-branches">
+    <article class="commercial-branch">
+      <div class="commercial-channel"><h3>团队订阅</h3><p>Team</p></div>
+      <div class="commercial-billing"><p class="commercial-billing-main">按席位</p><p>含使用额度</p></div>
+    </article>
+    <article class="commercial-branch">
+      <div class="commercial-channel"><h3>企业订阅</h3><p>Enterprise</p></div>
+      <div class="commercial-billing"><p class="commercial-billing-main">席位费</p><p>+ Token 费</p></div>
+    </article>
+    <article class="commercial-branch">
+      <div class="commercial-channel"><h3>模型 API</h3><p>Claude API</p></div>
+      <div class="commercial-billing"><p class="commercial-billing-main">按 Token</p><p>按量计费</p></div>
+    </article>
+    <article class="commercial-branch">
+      <div class="commercial-channel"><h3>云渠道</h3><p>Bedrock 等</p></div>
+      <div class="commercial-billing"><p class="commercial-billing-main">云平台定价</p><p>单独配额</p></div>
+    </article>
+  </div>
+</div>
+</div><footer class="slide-footer"><span>Claude 商业化</span><span>01</span></footer></section>
+<section class="slide kit-slide" data-slide-id="team-allowance" data-title="Team Standard / Premium：5 小时窗口 Token 量估算" data-section="Team 额度洞察" aria-label="第 2 页：Team Standard / Premium：5 小时窗口 Token 量估算"><header class="slide-header"><img class="brand" src="assets/huawei-logo.png" alt="HUAWEI"><span>HUAWEI CLOUD</span></header><div class="heading"><div class="eyebrow">TEAM / ALLOWANCE</div><h2>Team Standard / Premium：5 小时窗口 Token 量估算</h2><p>订阅同时受窗口与周额度约束；下面把额度折算成单个 5 小时窗口的 Token 量。</p></div><div class="kit-body"><div class="team-insight allowance-layout">
+  <div class="allowance-top">
+    <div class="allowance-comparison">
+      <div class="allowance-head"><span>比较维度</span><strong>Standard</strong><strong>Premium</strong></div>
+      <div class="allowance-row"><span>月费 / 席位</span><strong>$25</strong><strong>$125</strong></div>
+      <div class="allowance-row"><span>单个 5 小时窗口</span><strong>≈ $20</strong><strong>≈ $102</strong></div>
+      <div class="allowance-row"><span>每周额度</span><strong>≈ $189</strong><strong>≈ $910</strong></div>
+      <div class="allowance-row allowance-row-metric"><span>每周完整窗口数</span><strong>≈ 9.2 个</strong><strong>≈ 8.9 个</strong></div>
+      <div class="allowance-row allowance-row-metric"><span>每日 2 个窗口</span><strong>≈ 4.6 天</strong><strong>≈ 4.5 天</strong></div>
+      <div class="allowance-unit">窗口与周额度以 API 等价值表示</div>
+    </div>
+    <div class="model-mix-card">
+      <h3>单窗口模型构成 · 按 API 价值</h3>
+      <div class="model-chart">
+        <div class="model-donut" role="img" aria-label="Opus 5.5 占 82%，Opus 5 占 4%，Sonnet 系列占 7%，Fable 5.1 占 5%，其他占 2%">
+          <div class="model-donut-center"><b>82%</b><span>Opus 5.5</span></div>
+        </div>
+        <ul class="model-legend">
+          <li><i class="model-dot opus55"></i><span>Opus 5.5</span><b>82%</b></li>
+          <li><i class="model-dot opus5"></i><span>Opus 5</span><b>4%</b></li>
+          <li><i class="model-dot sonnet"></i><span>Sonnet 系列</span><b>7%</b></li>
+          <li><i class="model-dot fable"></i><span>Fable 5.1</span><b>5%</b></li>
+          <li><i class="model-dot other"></i><span>其他</span><b>2%</b></li>
+        </ul>
+      </div>
+      <p class="model-note">额度主要消耗在 Opus；占比为 API 价值口径。</p>
+    </div>
+    <div class="token-mix-card">
+      <div class="token-mix-head"><span>Token 类型</span><span>构成比例（估算）</span><span>数量（万）</span></div>
+      <div class="mix-bar" role="img" aria-label="普通输入 1.8%，5 分钟缓存写入 4.3%，缓存读取 93.5%，模型输出 0.4%">
+        <span class="mix-seg input" style="width:1.8%"></span><span class="mix-seg write" style="width:4.3%"></span><span class="mix-seg read" style="width:93.5%"></span><span class="mix-seg output" style="width:0.4%"></span>
+      </div>
+      <ul class="mix-legend">
+        <li><i class="mix-dot input"></i><span>普通输入</span><b>1.8%</b><em>约 65 万</em></li>
+        <li><i class="mix-dot write"></i><span>5 分钟缓存写入</span><b>4.3%</b><em>约 156 万</em></li>
+        <li><i class="mix-dot read"></i><span>缓存读取</span><b>93.5%</b><em>约 3,385 万</em></li>
+        <li><i class="mix-dot output"></i><span>模型输出</span><b>0.4%</b><em>约 15 万</em></li>
+      </ul>
+      <p class="mix-note">假设：Claude Code 日常编码场景下的 Token 构成比例</p>
+    </div>
+  </div>
+  <div class="allowance-token">
+    <div class="token-intro"><span class="estimate-tag">估算</span><span class="token-caption">单个 <span class="token-window">5 小时</span>窗口<br>Token 换算</span></div>
+    <div class="token-plans">
+      <div class="token-plan"><span class="token-plan-name">Standard</span><strong>≈ 3,620 万</strong></div>
+      <div class="token-plan"><span class="token-plan-name">Premium</span><strong>≈ 1.74 亿</strong><span class="token-plan-note">按周额度 4.8× 推算</span></div>
+    </div>
+  </div>
+  <p class="insight-footnote">来源：<a class="source-link" href="https://wokey.ai/claude-team-limits" target="_blank" rel="noopener noreferrer" title="Wokey 报告">Wokey</a> 报告。Token 构成与换算为建模假设（沿用报告混合模型），Premium 由 4.8× 推算。</p>
+</div>
+</div><footer class="slide-footer"><span>Claude 商业化</span><span>02</span></footer></section>
+<section class="slide kit-slide" data-slide-id="team-development-tasks" data-title="3,620 万 Tokens 难支撑高强度开发，5 小时额度容易提前触顶" data-section="Team 额度洞察" aria-label="第 3 页：3,620 万 Tokens 难支撑高强度开发，5 小时额度容易提前触顶"><header class="slide-header"><img class="brand" src="assets/huawei-logo.png" alt="HUAWEI"><span>HUAWEI CLOUD</span></header><div class="heading"><div class="eyebrow">TEAM / DEVELOPMENT TASKS</div><h2>3,620 万 Tokens 难支撑高强度开发，5 小时额度容易提前触顶</h2><p>Standard 场景估算：单个 5 小时窗口，不代表可以连续开发满 5 小时。</p></div><div class="kit-body"><div class="team-insight tasks-layout">
+  <div class="task-grid">
+    <article class="task-card">
+      <span class="task-level">轻度开发</span>
+      <h3>零散修改</h3>
+      <p>简单 Bug、少量代码生成<br>开发者人工 Review</p>
+      <div class="task-time">可能用不完</div>
+      <span class="task-window">单个 5 小时窗口内</span>
+    </article>
+    <article class="task-card">
+      <span class="task-level">中高强度开发</span>
+      <h3>完整功能开发</h3>
+      <p>编写后端业务代码<br>持续运行测试、Debug</p>
+      <div class="task-time">约 2–5 小时<span class="estimate-tag">估</span></div>
+      <span class="task-window">Standard 额度耗尽时间</span>
+    </article>
+    <article class="task-card task-card-focus">
+      <span class="task-level">高强度 Agent 开发</span>
+      <h3>跨模块迭代</h3>
+      <p>跨模块修改代码<br>反复测试、多轮自动修复</p>
+      <div class="task-time">约 1–3 小时<span class="estimate-tag">估</span></div>
+      <span class="task-window">Standard 额度耗尽时间</span>
+    </article>
+    <article class="task-card task-card-focus">
+      <span class="task-level">多 Agent 并发</span>
+      <h3>多项任务同时跑</h3>
+      <p>同时开发功能<br>生成测试、执行重构</p>
+      <div class="task-time">约 1 小时<span class="estimate-tag">估</span></div>
+      <span class="task-window">Standard 额度耗尽时间</span>
+    </article>
+  </div>
+  <div class="task-example">
+    <div class="task-example-title"><strong>Java 电商项目</strong><span>订单查询、分页、导出功能</span></div>
+    <div class="task-example-steps"><span>分析代码、实现接口</span><span aria-hidden="true">→</span><span>生成测试、运行测试</span><span aria-hidden="true">→</span><span>分析报错、持续修复</span></div>
+    <p><strong>2–3 小时可能触顶（估）</strong><span>触顶时，功能开发或测试修复仍可能继续。</span></p>
+  </div>
+</div>
+</div><footer class="slide-footer"><span>Claude 商业化</span><span>03</span></footer></section>
+<section class="slide kit-slide" data-slide-id="team-market-opportunity" data-title="GLM-5.3 降本 60%–70%，切入高强度 Coding 增量需求" data-section="Team 额度洞察" aria-label="第 4 页：GLM-5.3 降本 60%–70%，切入高强度 Coding 增量需求"><header class="slide-header"><img class="brand" src="assets/huawei-logo.png" alt="HUAWEI"><span>HUAWEI CLOUD</span></header><div class="heading"><div class="eyebrow">MAAS / BEST PRACTICE</div><h2>GLM-5.3 降本 60%–70%，切入高强度 Coding 增量需求</h2><p>结合前后端开发实践与华为 GLM-5.3 当前产品能力，优先试点额度触顶后的可迁移任务。</p></div><div class="kit-body"><div class="opportunity-layout">
+  <div class="opportunity-grid">
+    <article class="opp-card opp-card-market">
+      <div class="opp-head"><span class="opp-index">需求入口 · 额度触顶</span><span class="opp-tag">优先切入</span></div>
+      <h3>承接高消耗增量任务</h3>
+      <p>优先寻找经常触顶的研发团队，承接跨模块开发、测试修复与多 Agent 并行任务。</p>
+      <div class="opp-entry">
+        <span class="opp-entry-label">销售切入点</span>
+        <p>保留现有 Claude 订阅，用 GLM-5.3 按量 API 试点可迁移任务。</p>
+        <p class="opp-entry-note">MaaS 仍有 TPM、RPM 与服务配额限制。</p>
+      </div>
+    </article>
+    <article class="opp-card opp-card-cost">
+      <div class="opp-head"><span class="opp-index">客户实践 · 前后端开发</span><span class="opp-tag">最佳实践</span></div>
+      <h3>同等任务，成本降低</h3>
+      <p class="opp-customer-scenario">前端结合 OpenSpec 辅助开发，后端 TypeScript / Node.js 开发；开发者持续检查、Review 代码。</p>
+      <div class="opp-saving"><strong>60%–70% <span class="opp-off">off</span></strong><span>较 Claude 订阅</span></div>
+      <p class="opp-discount">同等开发任务，费用约为原来的 3–4 折</p>
+      <div class="opp-theory">
+        <p class="opp-cost-scope">API 理论费用（美元）· 同量 3,621 万 Tokens</p>
+        <table class="opp-theory-table">
+          <thead><tr><th scope="col">Opus 5.5</th><th scope="col">GLM-5.3</th><th scope="col">Sonnet 5.5</th></tr></thead>
+          <tbody><tr><td>$20.17</td><td>$12.56</td><td>$10.09</td></tr></tbody>
+        </table>
+        <p class="opp-cost-note"><span>GLM 较 Opus</span><strong>37.8% off</strong><span class="opp-cost-assumption">缓存读取全部命中 · 理论费用</span></p>
+      </div>
+    </article>
+    <article class="opp-card opp-card-cache">
+      <div class="opp-head"><span class="opp-index">同量同配比</span><span class="opp-tag">理论测算</span></div>
+      <h3>GLM-5.3 费用换算</h3>
+      <p class="opp-cache-scope">Team Standard 5 小时额度 ≈ 3,620 万 Tokens<br>Opus API 折算 $20.17 · 同量同配比<br>华为 GLM-5.3 · 当前缓存命中率 97%</p>
+      <table class="opp-cache-table">
+        <thead><tr><th scope="col">命中比例</th><th scope="col">GLM 测算</th><th scope="col">较 Opus</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">100%</th><td>$12.56</td><td>低 37.8%</td></tr>
+          <tr class="opp-cache-highlight"><th scope="row"><strong>97%</strong><span class="opp-cache-tag">华为能力</span></th><td>$13.71</td><td>低 32.0%</td></tr>
+          <tr><th scope="row">95%</th><td>$14.48</td><td>低 28.2%</td></tr>
+          <tr><th scope="row">90%</th><td>$16.41</td><td>低 18.6%</td></tr>
+          <tr><th scope="row">80%</th><td>$20.27</td><td>接近持平</td></tr>
+        </tbody>
+      </table>
+    </article>
+  </div>
+  <div class="opp-proof">
+    <span class="opp-proof-label">销售建议</span>
+    <p>从额度触顶找到需求，用降本案例吸引试用，再以同任务 POC 验证成功率与总成本。</p>
+  </div>
+</div>
+</div><footer class="slide-footer"><span>Claude 商业化</span><span>04</span></footer></section></div></main>
+  <nav id="controls" class="controls" aria-label="演示控制">
+    <div class="control-left"><span class="status-dot"></span><span id="section-label">开场</span></div>
+    <div class="control-center"><button id="previous" class="icon-button" aria-label="上一页" title="上一页 · ← / Page Up">‹</button><button id="page-counter" title="打开目录 · G" aria-haspopup="dialog">01 <span>/ 1</span></button><button id="next" class="icon-button" aria-label="下一页" title="下一页 · → / 空格">›</button></div>
+    <div class="control-right"><button id="overview" class="text-button" title="目录 · G"><span class="grid-icon" aria-hidden="true">▦</span>目录</button><span class="control-divider"></span><button id="language-toggle" class="text-button" type="button" aria-label="切换到英文" title="切换到英文">EN</button><span class="control-divider"></span><button id="fullscreen" class="text-button" title="全屏 · F"><span aria-hidden="true">⛶</span><span id="fullscreen-label">全屏</span></button></div>
+    <div class="progress-track"><div id="progress"></div></div>
+  </nav>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="overview-dialog" aria-labelledby="overview-title"><div class="dialog-header"><div><div class="eyebrow">PRESENTATION INDEX</div><h2 id="overview-title">演示目录</h2></div><button id="close-overview" class="icon-button" aria-label="关闭目录">×</button></div><div class="overview-toolbar"><div class="overview-settings-summary"><span id="overview-mode-label">点击页面直接跳转</span><span class="overview-count"><span>不演示</span> <b id="overview-skipped-count">0</b> / <span id="overview-total-count">1</span></span></div><div class="overview-settings-actions"><button id="overview-manage" class="overview-setting-button" type="button">屏蔽页面</button><button id="overview-restore" class="overview-setting-button" type="button" hidden>恢复全部</button><button id="overview-cancel" class="overview-setting-button" type="button" hidden>取消</button><button id="overview-save" class="overview-setting-button primary" type="button" hidden>保存</button></div></div><p id="overview-settings-error" class="overview-settings-error" role="status" hidden>至少保留一页用于演示</p><div id="overview-grid"></div><div class="dialog-footer"><span>仅当前浏览器生效</span><span>Esc 关闭</span></div></dialog>
+</body></html>

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+qa/
+deploy/cloudflare/dist/
+deploy/chatgpt-sites/dist/
+.wrangler/
+.env*
+!.env.example
+.dev.vars*
+__pycache__/
+*.zip
+*.pdf
+# 内部记录与留底页，不进公开仓库
+docs/
+content/team-continuity.html

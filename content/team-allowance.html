@@ -1,0 +1,50 @@
+<div class="team-insight allowance-layout">
+  <div class="allowance-top">
+    <div class="allowance-comparison">
+      <div class="allowance-head"><span>比较维度</span><strong>Standard</strong><strong>Premium</strong></div>
+      <div class="allowance-row"><span>月费 / 席位</span><strong>$25</strong><strong>$125</strong></div>
+      <div class="allowance-row"><span>单个 5 小时窗口</span><strong>≈ $20</strong><strong>≈ $102</strong></div>
+      <div class="allowance-row"><span>每周额度</span><strong>≈ $189</strong><strong>≈ $910</strong></div>
+      <div class="allowance-row allowance-row-metric"><span>每周完整窗口数</span><strong>≈ 9.2 个</strong><strong>≈ 8.9 个</strong></div>
+      <div class="allowance-row allowance-row-metric"><span>每日 2 个窗口</span><strong>≈ 4.6 天</strong><strong>≈ 4.5 天</strong></div>
+      <div class="allowance-unit">窗口与周额度以 API 等价值表示</div>
+    </div>
+    <div class="model-mix-card">
+      <h3>单窗口模型构成 · 按 API 价值</h3>
+      <div class="model-chart">
+        <div class="model-donut" role="img" aria-label="Opus 5.5 占 82%，Opus 5 占 4%，Sonnet 系列占 7%，Fable 5.1 占 5%，其他占 2%">
+          <div class="model-donut-center"><b>82%</b><span>Opus 5.5</span></div>
+        </div>
+        <ul class="model-legend">
+          <li><i class="model-dot opus55"></i><span>Opus 5.5</span><b>82%</b></li>
+          <li><i class="model-dot opus5"></i><span>Opus 5</span><b>4%</b></li>
+          <li><i class="model-dot sonnet"></i><span>Sonnet 系列</span><b>7%</b></li>
+          <li><i class="model-dot fable"></i><span>Fable 5.1</span><b>5%</b></li>
+          <li><i class="model-dot other"></i><span>其他</span><b>2%</b></li>
+        </ul>
+      </div>
+      <p class="model-note">额度主要消耗在 Opus；占比为 API 价值口径。</p>
+    </div>
+    <div class="token-mix-card">
+      <div class="token-mix-head"><span>Token 类型</span><span>构成比例（估算）</span><span>数量（万）</span></div>
+      <div class="mix-bar" role="img" aria-label="普通输入 1.8%，5 分钟缓存写入 4.3%，缓存读取 93.5%，模型输出 0.4%">
+        <span class="mix-seg input" style="width:1.8%"></span><span class="mix-seg write" style="width:4.3%"></span><span class="mix-seg read" style="width:93.5%"></span><span class="mix-seg output" style="width:0.4%"></span>
+      </div>
+      <ul class="mix-legend">
+        <li><i class="mix-dot input"></i><span>普通输入</span><b>1.8%</b><em>约 65 万</em></li>
+        <li><i class="mix-dot write"></i><span>5 分钟缓存写入</span><b>4.3%</b><em>约 156 万</em></li>
+        <li><i class="mix-dot read"></i><span>缓存读取</span><b>93.5%</b><em>约 3,385 万</em></li>
+        <li><i class="mix-dot output"></i><span>模型输出</span><b>0.4%</b><em>约 15 万</em></li>
+      </ul>
+      <p class="mix-note">假设：Claude Code 日常编码场景下的 Token 构成比例</p>
+    </div>
+  </div>
+  <div class="allowance-token">
+    <div class="token-intro"><span class="estimate-tag">估算</span><span class="token-caption">单个 <span class="token-window">5 小时</span>窗口<br>Token 换算</span></div>
+    <div class="token-plans">
+      <div class="token-plan"><span class="token-plan-name">Standard</span><strong>≈ 3,620 万</strong></div>
+      <div class="token-plan"><span class="token-plan-name">Premium</span><strong>≈ 1.74 亿</strong><span class="token-plan-note">按周额度 4.8× 推算</span></div>
+    </div>
+  </div>
+  <p class="insight-footnote">来源：<a class="source-link" href="https://wokey.ai/claude-team-limits" target="_blank" rel="noopener noreferrer" title="Wokey 报告">Wokey</a> 报告。Token 构成与换算为建模假设（沿用报告混合模型），Premium 由 4.8× 推算。</p>
+</div>
