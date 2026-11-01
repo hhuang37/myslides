@@ -58,7 +58,8 @@
 .english-deck .kit-body .opp-entry p{font-size:20px;line-height:1.5}
 .english-deck .kit-body .opp-card .opp-market-note{font-size:15px;line-height:1.45}
 .english-deck .kit-body .opp-card-cost .opp-customer-scenario{font-size:18px;line-height:1.3}
-.english-deck .opp-saving>span{font-size:17px;line-height:1.4}
+.english-deck .opp-saving>span:not(.opp-source){font-size:17px;line-height:1.4}
+.english-deck .opp-saving>strong{font-size:40px}
 .english-deck .kit-body .opp-card .opp-discount{font-size:22px;line-height:1.4}
 .english-deck .kit-body .opp-card .opp-cost-scope,.english-deck .kit-body .opp-card .opp-cache-scope{font-size:16px;line-height:1.4}
 .english-deck .kit-body .opp-card .opp-cost-note{font-size:16px;line-height:1.4}
